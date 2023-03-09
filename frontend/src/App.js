@@ -10,7 +10,7 @@ function App() {
   const [prompt, setPrompt] = useState('');
   const [chatlog, setChatlog] = useState([]);
   const [models,setModels]= useState([]);
-  const [currentModel,setCurrentModel] = useState('ada')
+  const [currentModel,setCurrentModel] = useState('text-davinci-003')
   
   console.log(models)
   useEffect(()=>{
