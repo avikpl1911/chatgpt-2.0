@@ -22,7 +22,7 @@ function App() {
   }
    
   function getEngines(){
-    fetch("http://localhost:4000/models").then(res=>res.json()).then(data=>setModels(data.models.data))
+    fetch("https://chatgpt2-99.onrender.com/models").then(res=>res.json()).then(data=>setModels(data.models.data))
   }
 
   const handleSubmit = async (e) => {
@@ -36,7 +36,7 @@ function App() {
 
     
     
-    const response = await fetch("http://localhost:4000",{
+    const response = await fetch("https://chatgpt2-99.onrender.com",{
       method:"POST",
       headers:{
         "Content-type":"application/json"
