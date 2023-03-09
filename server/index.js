@@ -21,7 +21,7 @@ const openai = new OpenAIApi(configuration);
 
 app.use(cors())
 
-const port = 4000;
+const port = 4000 || process.env.PORT;
 
 
 app.get('/models', async (req,res)=>{
