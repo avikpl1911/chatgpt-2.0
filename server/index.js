@@ -24,6 +24,10 @@ app.use(cors())
 const port = 4000 || process.env.PORT;
 
 
+app.get('/',(req,res)=>{
+res.send("server is working");
+});
+
 app.get('/models', async (req,res)=>{
   try {
     const response = await openai.listEngines();
