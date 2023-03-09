@@ -25,11 +25,16 @@ const port = 4000 || process.env.PORT;
 
 
 app.get('/models', async (req,res)=>{
-   const response = await openai.listEngines();
+  try {
+    const response = await openai.listEngines();
    
    res.json({
     models: response.data
    })
+  } catch (error) {
+    console.log(err)
+  }
+   
 })
 
 
