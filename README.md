@@ -1,1 +1,1 @@
-# chatgpt-2.0
+https://chatgpt-2-0-q71z.vercel.app/
